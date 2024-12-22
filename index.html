@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Enter your name, surname and student id number here
+-->
+<html>
+    <head>
+        <title>Library</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="books.js"></script>
+        <script src="homework3.js"></script>
+        <style>
+            table, td, th { border: 1px solid gray; border-collapse: collapse;}
+            td:nth-child(3), td:nth-child(6) {text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h1>Books in the Library</h1>
+        <div>
+          <div>
+            <label for="genre-list">Genre:</label>
+            <select id="genre-list">
+              <option value="all">All</option>
+            </select>
+          </div>
+          <div>Publication year 
+            <label for="publication-year-from">from:</label>      
+            <input type="text" id="publication-year-from">
+            <label for="publication-year-until"> until:</label>      
+            <input type="text" id="publication-year-until">
+          </div> 
+          <div>
+            <label for="country-list">Author nationality:</label>
+            <select id="country-list">
+				<option value="">All</option>
+			</select>
+          </div>             
+          <div>
+            <label for="available">Show only available books</label>      
+            <input type="checkbox" id="available">
+          </div>        
+          <div>
+            <label for="search">Book search:</label>      
+            <input type="search" id="search">
+          </div>
+          <div>
+            <label for="author-info">Include author information</label>      
+            <input type="checkbox" id="author-info" checked>
+          </div>    
+          <div id="buttons">
+            <button id="show">Show</button>
+          </div>
+            <table id="book-shelf">
+            <!--EXAMPLE START-->
+            <!--This is an example result. The example should be removed in the final homework solution. -->
+            <tr>
+              <th>Title</th>
+              <th>Authors</th>
+              <th>Published</th>
+              <th>Genre</th>
+              <th>ISBN</th>
+              <th>Total copies/available copies</th>
+            </tr>
+            <tr>
+              <td>Pride and Prejudice</td>
+              <td>Jane Austen (British, 1775-1817)</td>
+              <td>1813</td>
+              <td>Romance</td>
+              <td>9780141441330</td>
+              <td>5/3</td>
+            </tr>      
+            <tr>
+              <td>The Wedding Dare</td>
+              <td>Anna Stone (American, 1980), Jessica Marlowe (American, 1985)</td>
+              <td>2019</td>
+              <td>Romance</td>
+              <td>9780994141253</td>
+              <td>6/4</td>
+            </tr>      
+            <!--EXAMPLE END-->
+          </table>
+        </div>
+    </body>
+</html>
